@@ -1,0 +1,118 @@
+========================================
+  TEST CASES — Student Grade Calculator
+========================================
+
+Each test lists: Input → Expected Output → Result
+
+----------------------------------------
+✅ VALID MARK TESTS
+----------------------------------------
+
+Test 1 — Grade A (Top boundary)
+  Name   : Priya
+  Marks  : 100
+  Grade  : A
+  Message: Outstanding! You're a star! 🌟
+  Result : PASS ✅
+
+Test 2 — Grade A (Low boundary)
+  Name   : Arjun
+  Marks  : 90
+  Grade  : A
+  Message: Outstanding! You're a star! 🌟
+  Result : PASS ✅
+
+Test 3 — Grade B (High boundary)
+  Name   : Sara
+  Marks  : 89
+  Grade  : B
+  Message: Very Good! Keep it up! 👍
+  Result : PASS ✅
+
+Test 4 — Grade B (Low boundary)
+  Name   : Priya
+  Marks  : 85 (sample from assignment)
+  Grade  : B
+  Message: Very Good! Keep it up! 👍
+  Result : PASS ✅
+
+Test 5 — Grade C (High boundary)
+  Name   : Rahul
+  Marks  : 79
+  Grade  : C
+  Message: Good work! A little more effort and you'll shine! 💪
+  Result : PASS ✅
+
+Test 6 — Grade C (Low boundary)
+  Name   : Meena
+  Marks  : 70
+  Grade  : C
+  Message: Good work! A little more effort and you'll shine! 💪
+  Result : PASS ✅
+
+Test 7 — Grade D (High boundary)
+  Name   : Karan
+  Marks  : 69
+  Grade  : D
+  Message: You passed! Aim higher next time — you can do it! 🎯
+  Result : PASS ✅
+
+Test 8 — Grade D (Low boundary)
+  Name   : Anita
+  Marks  : 60
+  Grade  : D
+  Message: You passed! Aim higher next time — you can do it! 🎯
+  Result : PASS ✅
+
+Test 9 — Grade F (High boundary)
+  Name   : Dev
+  Marks  : 59
+  Grade  : F
+  Message: Don't give up! Study harder and you'll improve! 📚
+  Result : PASS ✅
+
+Test 10 — Grade F (Zero)
+  Name   : Riya
+  Marks  : 0
+  Grade  : F
+  Message: Don't give up! Study harder and you'll improve! 📚
+  Result : PASS ✅
+
+----------------------------------------
+❌ INVALID INPUT TESTS (Validation)
+----------------------------------------
+
+Test 11 — Marks above 100
+  Input  : 105
+  Expected: ❌ Error message, ask again
+  Result : PASS ✅
+
+Test 12 — Negative marks
+  Input  : -5
+  Expected: ❌ Error message, ask again
+  Result : PASS ✅
+
+Test 13 — Non-numeric input
+  Input  : "abc"
+  Expected: ❌ Error message, ask again
+  Result : PASS ✅
+
+Test 14 — Empty name
+  Input  : (blank)
+  Expected: ❌ Error message, ask again
+  Result : PASS ✅
+
+Test 15 — Decimal marks (valid)
+  Name   : Tanvi
+  Marks  : 82.5
+  Grade  : B
+  Message: Very Good! Keep it up! 👍
+  Result : PASS ✅
+
+----------------------------------------
+SUMMARY
+----------------------------------------
+Total Tests : 15
+Passed      : 15
+Failed      : 0
+========================================
