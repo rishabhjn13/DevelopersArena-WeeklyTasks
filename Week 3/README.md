@@ -34,8 +34,6 @@ python3 sales_analysis.py
 
 ## 📁 Expected CSV Format
 
-Your `sales_data.csv` should have at least these columns:
-
 | Product | Quantity | Price |
 |---|---|---|
 | Laptop | 5 | 45000 |
