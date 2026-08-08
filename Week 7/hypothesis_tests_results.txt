@@ -1,0 +1,46 @@
+HYPOTHESIS TESTING RESULTS
+==================================================
+
+Test 1: Independent t-test
+H0: mean Total_Sales in East equals mean Total_Sales in West
+H1: mean Total_Sales in East differs from mean Total_Sales in West
+t-statistic: 2.0623
+p-value: 0.0455
+Result at alpha = 0.05: reject H0, significant difference
+East mean: 132612.58, West mean: 81689.31
+
+Test 2: Independent t-test
+H0: mean MonthlyCharges is equal for churned and retained customers
+H1: mean MonthlyCharges differs between churned and retained customers
+t-statistic: 2.6464
+p-value: 0.010079
+Result at alpha = 0.05: reject H0, significant difference
+Churned mean: 129.77, Retained mean: 111.72
+
+Test 3: Independent t-test
+H0: mean Total_Sales is equal for Laptop and Phone products
+H1: mean Total_Sales differs between Laptop and Phone products
+t-statistic: 0.5650
+p-value: 0.5751
+Result at alpha = 0.05: fail to reject H0, no significant difference
+Laptop mean: 162050.42, Phone mean: 142969.70
+
+Test 4: One-way ANOVA
+H0: mean Total_Sales is equal across all four regions
+H1: at least one region has a different mean Total_Sales
+F-statistic: 2.1644
+p-value: 0.0972
+Result at alpha = 0.05: fail to reject H0, no significant regional difference
+
+Test 5: Chi-square test of independence
+H0: Contract type and Churn are independent
+H1: Contract type and Churn are associated
+Chi2-statistic: 27.7153
+Degrees of freedom: 2
+p-value: 0.000001
+Result at alpha = 0.05: reject H0, contract type and churn are associated
+
+Normality checks, Shapiro-Wilk
+Quantity: W = 0.9304, p = 0.0001, departs from normal
+Price: W = 0.9475, p = 0.0006, departs from normal
+Total_Sales: W = 0.8989, p = 0.0000, departs from normal
